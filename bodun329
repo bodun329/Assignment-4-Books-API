@@ -1,0 +1,13 @@
+git clone https://github.com/bodun329/Assignment-4-Books-API/new/main
+cd Bodun329
+code .
+npm install
+app.use(express.json());
+app.listen(3000, () => console.log("Server running on port 3000"));
+const newBook = { id: books.length + 1, ...req.body };
+books.push(newBook);
+res.status(201).json(newBook);
+git add .
+git commit -m "Added REST API and unit tests"
+git push
+
